@@ -10,7 +10,8 @@ app = Flask(__name__)
 @app.route('/')
 def says():
     # fortune -s | cowsay
-    return cowsay.cowsay(pyfortune.Chooser().choose()[1]).rstrip() + '\n'
+    s = cowsay.cowsay(pyfortune.Chooser().choose()[1]).rstrip() + '\n'
+    return s, 200, {'Content-Type': 'text/plain; charset=UTF-8'}
 
 
 def main():
