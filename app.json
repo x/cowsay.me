@@ -1,0 +1,8 @@
+{
+    "name": "cowsay.me",
+    "description": "It's a cow saying a fortune",
+    "repository": "https://github.com/x/cowsay.me",
+    "addons": [
+        "heroku-postgresql"
+    ]
+}
